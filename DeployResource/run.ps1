@@ -17,7 +17,7 @@ $Parameters = @{
     "storageAccountPrefix" = $Prefix
 }
 
-$Template = "$PWD\DeployVM\Azuredeploy.json"
+$Template = "$PWD\DeployResource\Azuredeploy.json"
 $ResourceGroupName = "$Prefix$Random"
 New-AzResourceGroup -Name  $ResourceGroupName -Location 'West Europe'
 $DeploymentParameters = @{
